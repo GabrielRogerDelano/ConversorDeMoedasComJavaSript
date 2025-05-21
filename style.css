@@ -1,3 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+header{
+    background-color: blue;
+    width: 100vw;
+    min-height: 75px;
+}
+
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 86vh;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 72vw;
+    height: 20vh;
+    border-radius: 15px 15px 0 0 ;
+    box-shadow: -3px 0 6px 0 #555;
+}
+.artigo_de_informacao{
+    display: grid;
+    grid-template-columns: 24vw 13vw 1.1cm 13vw;
+    grid-template-rows: 0.6cm 1.3cm;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 1.5vw;
+}
+
+.para_informado{
+    grid-column: 4/5;
+}
+
+.valor_informado, .para_informado, .de_informado{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.input_de_valor{
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.primeira_lista, .segunda_lista{
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.atualizar{
+    border-radius: 50px;
+    color: aqua;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.atualizar:hover{
+    box-shadow: -0.5px 0.5px 4px 0 #48e;
+    font-size: 16px;
+}
+
+.sessao_de_resultado{
+    background-color: #fff;
+    width: 72vw;
+    height: 20vh;
+    border-radius: 0 0 15px 15px;
+    box-shadow: -4px 6px 6px 0 #555;
+}
+
+.artigo_de_resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68vw;
+    height: 12vh;
+}
+
+.botao_resultado{
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #48e;
+    border-radius: 8px;
+    margin-left: 0.7cm;
+}
+
+.botao_resultado:hover{
+    background-color: rgb(34, 74, 134);
+    box-shadow: -2px 0 6px 0 #48e;
+}
+
+.Valor_resultado{
+    margin-left: 8vw;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px solid #777;
+    padding: 8px 10px;
+    box-shadow: -2px 0 6px 0 #48e;
+}
+
+.background{
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(60deg, rgb(33 , 6, 143)0%, rgb(0, 172, 193, 1)100%);
+    height: 86vw;
+    z-index: -1;
+}
+
+.waves{
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    margin-bottom: -7px;
+    bottom: -66vh;
+}
+.parallax > use{
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.background{
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(60deg, rgb(33, 6, 143) 0%, rgba(0,172,193,1) 100%);
+    height: 86vh;
+    z-index: -1;
+}
+.waves{
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    margin-bottom: -7px;
+    bottom: -66vh;
+}
+/* Animation */
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {transform: translate3d(-90px,0,0);}
+    100% {transform: translate3d(85px,0,0);}
 }

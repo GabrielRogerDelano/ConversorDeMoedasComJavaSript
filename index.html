@@ -7,7 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>teste</h1>
+    <header>
+        <h1>Conversor de moedas</h1>
+    </header>
+    <main>
+        <section class="principal"> 
+            <article class="artigo_de_informacao">
+                <p class="valor_informado">Valor</p>
+                <p class="de_informado"> de</p>
+                <p class="para_informado"> para</p>
+
+                <input class="input_de_valor" autocomplete="none">
+                <select name="primeira_lista" class="primeira_lista"></select>
+                <button class="atualizar"> <></button>
+                <select name="segunda_lsita" class="segunda_lsita"></select>
+            </article>
+        </section>
+        <section class="sessao_de_resultado">
+            <article class="artigo_de_resultado">
+                <p class="Valor_resultado">000000</p>
+                <button class="botao_resultado">Converter</button>
+
+            </article>
+        </section>
+        <section class="background">
+            <article>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </article>
+        </section>
+    </main>
     <script src="scripts.js"></script>
 </body>
 </html>
